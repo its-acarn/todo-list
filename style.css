@@ -10,13 +10,14 @@
 }
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 4fr 1fr;
   }
   .heading {
     size: 90px;
     color: hsl(166, 96%, 50%);
     grid-column: span 2;
     text-align: right;
+    margin: 1.5rem 0 1.5rem 0;
   }
   .input-box {
     grid-column: span 2;
@@ -28,18 +29,36 @@
     font-size: 20px;
     font-weight: 400;
     text-indent: 18px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 5px 25px 25px 5px;
+    background: hsla(175, 9%, 50%, 0.4);
+    border-radius: 0px 25px 0px 25px;
     border: 0px;
     box-shadow: none;
     outline: none;
   }
   .todo-items {
-    color: white;
-    border: 0.5px solid red;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 20px;
+    margin: 5px 0 5px 0; 
   }
+  .todo-item {
+    color: white;
+    border: 1px solid hsl(166, 96%, 50%);
+    padding: 10px;
+    margin: 5px 0 5px 0;
+    text-indent: 10px;
+    border-radius: 0 0 0 25px;
+    font-size: 15px;
+  }
+  .done-items {
+    margin: 5px 0 5px 0;
+    border-radius: 10px;
+  }
+  .done-item {
+    color: black;
+    border: 1px solid hsl(166, 96%, 50%);
+    padding: 10px;
+    margin: 5px 0 5px 0;
  
+    background-color: hsl(166, 96%, 50%);;
+    border-radius: 0 25px 0px 0;
+    font-size: 15px;
+  }
   
