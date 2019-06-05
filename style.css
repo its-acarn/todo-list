@@ -10,22 +10,22 @@
 }
   .grid {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 4fr 1fr 1fr;
   }
   .heading {
     size: 90px;
     color: hsl(166, 96%, 50%);
-    grid-column: span 2;
+    grid-column: span 3;
     text-align: right;
     margin: 1.5rem 0 1.5rem 0;
   }
   .input-box {
-    grid-column: span 2;
+    grid-column: span 3;
   }
   .todo-input {
     width: 100%;
     height: 40px;
-    color: black;
+    color: white;
     font-size: 20px;
     font-weight: 400;
     text-indent: 18px;
@@ -37,6 +37,7 @@
   }
   .todo-items {
     margin: 5px 0 5px 0; 
+    width: 100%;
   }
   .todo-item {
     color: white;
@@ -49,16 +50,33 @@
   }
   .done-items {
     margin: 5px 0 5px 0;
-    border-radius: 10px;
+    width: 100%;
   }
   .done-item {
     color: black;
     border: 1px solid hsl(166, 96%, 50%);
     padding: 10px;
     margin: 5px 0 5px 0;
- 
-    background-color: hsl(166, 96%, 50%);;
+    background-color: hsl(166, 96%, 50%);
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    max-width: 64px;
+  }
+  .not-done-items {
+    margin: 5px 0 5px 0;
+    width: 100%;
+  }
+  .not-done-item {
+    color: black;
+    border: 1px solid hsl(166, 96%, 50%);
+    padding: 10px;
+    margin: 5px 0 5px 0;
+    background-color: hsl(166, 96%, 50%);
     border-radius: 0 25px 0px 0;
     font-size: 15px;
+    display: block;
+    width: 100%;
+    max-width: 64px;
   }
   
