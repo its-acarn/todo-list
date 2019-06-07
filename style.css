@@ -1,16 +1,19 @@
 * {
     font-family: Helvetica, Arial, sans-serif;
     box-sizing: border-box;
-    
-}
+    }
 #bg {
   /*background-image: url("skye-hills.jpg");
   background-size: auto;*/
   background: black;
+  margin: 2em 25% 3em 25%;
+}
+h1 {
+  letter-spacing: 8px;
 }
   .grid {
     display: grid;
-    grid-template-columns: 4fr 1fr 1fr;
+    grid-template-columns: 4fr 64px 64px;
   }
   .heading {
     size: 90px;
@@ -63,6 +66,9 @@
     width: 100%;
     max-width: 64px;
   }
+  .done-item:hover {
+    background-color: hsl(166, 96%, 45%);
+  }
   .not-done-items {
     margin: 5px 0 5px 0;
     width: 100%;
@@ -79,4 +85,6 @@
     width: 100%;
     max-width: 64px;
   }
-  
+  .not-done-item:hover {
+    background-color: hsl(166, 96%, 45%);
+  }
