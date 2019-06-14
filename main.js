@@ -1,3 +1,3 @@
 console.log("it works");
 
-let = document.getElementsByClassName('done-items')
+let myDone_Items = document.getElementsByClassName('done-items');
