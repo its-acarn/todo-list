@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <link href="./style.css" type="text/css" rel="stylesheet">
-  <script src="./main.js"></script>
+  <!--<link href="./style.css" type="text/css" rel="stylesheet">-->
+  
+  
+  <!--Page title (in the tab)-->
   <head>
     <title>todo what?</title>
   </head>
-  <body id="bg"></body>
-  <div class="grid"> 
-    <div class="heading">
-      <h1>todo|list</h1>
-    </div>
-    <div class="input-box">
-      <input type='text' id='todo-input' placeholder="todo... "></input>
-    </div>
-    <div class="todo-items">
+  <body id="bg">
+    <div class="grid"> 
+
+    <!--Heading title-->
+      <h1 class="heading">todo|list</h1>
+
+    <!--Todo list input and input box-->
+      <input id='input' type='text' placeholder="todo... ">
+      <button id="btn" type="button">+</button>
+      <ul id="list"></ul>
+
+    <!--Todo list item and related buttons HTML-->
+    <!--<div class="todo-items">
       <div class="todo-item">item</div>
     </div>
     <div class="done-items">
@@ -21,7 +27,11 @@
     </div> 
     <div class="not-done-items">
       <button type='button' class="not-done-item">?</button>
+    </div>-->
     </div>
-  </div>
- 
+  </body>
+
+  <script type='text/javascript' src="./main.js"></script>
+
   </html>
+  

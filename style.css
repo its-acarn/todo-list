@@ -3,7 +3,7 @@
     box-sizing: border-box;
     }
 #bg {
-  background: black;
+  background: white;
 }
 h1 {
   letter-spacing: 8px;
@@ -20,9 +20,25 @@ h1 {
     text-align: right;
     margin: 1em 0 1em 0;
   }
-  .input-box {
-    grid-column: 3/9;
+  #input-box {
+    grid-column: 3/8;
     grid-row: 2/3;
+  }
+  #btn {
+    grid-column: 8/9;
+    grid-row:2/3;
+    background: black;
+    box-shadow: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 7px;
+    border: 1px hsl(166, 96%, 50%) solid;
+    max-width: 40px;
+    border-radius: 400px;
+  }
+  #btn:hover {
+    background: hsl(166, 96%, 50%);
   }
   #todo-input {
     width: 100%;
